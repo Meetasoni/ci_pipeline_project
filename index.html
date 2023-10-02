@@ -1,18 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Login</h2>
-    <form action="login.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <input type="submit" value="Login">
-    </form>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="post">
+            <h2>Post Title 1</h2>
+            <p>Posted by John Doe on January 1, 2023</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel metus ut felis varius tempor vel ac ante.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="post">
+            <h2>Post Title 2</h2>
+            <p>Posted by Jane Smith on January 2, 2023</p>
+            <p>Integer dapibus, leo nec semper malesuada, est nisi consequat ex, vel tristique nulla augue eget arcu.</p>
+            <a href="#">Read More</a>
+        </div>
+        <!-- Add more posts here -->
+    </div>
 </body>
 </html>
